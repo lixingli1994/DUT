@@ -1,0 +1,337 @@
+\begin{thebibliography}{10}
+
+\bibitem{Breuer}
+\uppercase{Breuer H~P}, \uppercase{Petruccione F}.
+\newblock The Theory of Open Quantum Systems[M].
+\newblock Oxford University Press, 2002.
+
+\bibitem{breuer2009measure}
+\uppercase{Breuer H}, \uppercase{Laine E}, \uppercase{Piilo J}.
+\newblock Measure for the degree of non-markovian behavior of quantum processes
+  in open systems[J].
+\newblock Physical Review Letters, 2009, 103(21):210401.
+
+\bibitem{devega2017dynamics}
+\uppercase{De~Vega I}, \uppercase{Alonso D}.
+\newblock Dynamics of non-markovian open quantum systems[J].
+\newblock Reviews of Modern Physics, 2017, 89(1):58.
+
+\bibitem{haikka2012non-markovianity}
+\uppercase{Haikka P}, \uppercase{Goold J}, \uppercase{Mcendoo S}, et~al.
+\newblock Non-markovianity, loschmidt echo, and criticality: A unified
+  picture[J].
+\newblock Physical Review A, 2012, 85(6):060101.
+
+\bibitem{tu2008non-markovian}
+\uppercase{Tu M~W}, \uppercase{Zhang W}.
+\newblock Non-markovian decoherence theory for a double-dot charge qubit[J].
+\newblock Physical Review B, 2008, 78(23):235311.
+
+\bibitem{leggett1987dynamics}
+\uppercase{Leggett A~J}, \uppercase{Chakravarty S}, \uppercase{Dorsey A~T},
+  et~al.
+\newblock Dynamics of the dissipative two-state system[J].
+\newblock Reviews of Modern Physics, 1987, 59(1):1--85.
+
+\bibitem{wilczek2012quantum}
+\uppercase{Wilczek F}.
+\newblock Quantum time crystals[J].
+\newblock Physical Review Letters, 2012, 109(16):160401.
+
+\bibitem{roulet2018quantum}
+\uppercase{Roulet A}, \uppercase{Bruder C}.
+\newblock Quantum synchronization and entanglement generation[J].
+\newblock Physical Review Letters, 2018, 121(6).
+
+\bibitem{mari2013measures}
+\uppercase{Mari A}, \uppercase{Farace A}, \uppercase{Didier N}, et~al.
+\newblock Measures of quantum synchronization in continuous variable
+  systems.[J].
+\newblock Physical Review Letters, 2013, 111(10):103605--103605.
+
+\bibitem{karpat2019quantum}
+\uppercase{Karpat G}, \uppercase{Yalcinkaya I}, \uppercase{Cakmak B}.
+\newblock Quantum synchronization in a collision model[J].
+\newblock Physical Review A, 2019, 100(1).
+
+\bibitem{vicentini2017critical}
+\uppercase{Vicentini F}, \uppercase{Minganti F}, \uppercase{Rota R}, et~al.
+\newblock Critical slowing down in driven-dissipative bose-hubbard lattices[J].
+\newblock arXiv: Quantum Physics, 2017.
+
+\bibitem{houck2012on-chip}
+\uppercase{Houck A}, \uppercase{Tureci H~E}, \uppercase{Koch J}.
+\newblock On-chip quantum simulation with superconducting circuits[J].
+\newblock Nature Physics, 2012, 8(4):292--299.
+
+\bibitem{bloch2008many-body}
+\uppercase{Bloch I}, \uppercase{Dalibard J}, \uppercase{Zwerger W}.
+\newblock Many-body physics with ultracold gases[J].
+\newblock Reviews of Modern Physics, 2008, 80(3):885--964.
+
+\bibitem{muller2012engineered}
+\uppercase{Muller M}, \uppercase{Diehl S}, \uppercase{Pupillo G}, et~al.
+\newblock Engineered open systems and quantum simulations with atoms and
+  ions[J].
+\newblock Advances in Atomic Molecular and Optical Physics, 2012, 61:1--80.
+
+\bibitem{tomadin2010many-body}
+\uppercase{Tomadin A}, \uppercase{Fazio R}.
+\newblock Many-body phenomena in qed-cavity arrays [invited][J].
+\newblock Journal of The Optical Society of America B-optical Physics, 2010,
+  27(6).
+
+\bibitem{vojta2003quantum}
+\uppercase{Vojta T}.
+\newblock Quantum phase transitions[J].
+\newblock arXiv: Condensed Matter, 2003.
+
+\bibitem{zarei2019phase}
+\uppercase{Zarei M~H}, \uppercase{Montakhab A}.
+\newblock Phase transition in a noisy kitaev toric code model[J].
+\newblock Physical Review A, 2019, 99(5).
+
+\bibitem{casteels2017critical}
+\uppercase{Casteels W}, \uppercase{Fazio R}, \uppercase{Ciuti C}.
+\newblock Critical dynamical properties of a first-order dissipative phase
+  transition[J].
+\newblock Physical Review A, 2017, 95(1):012128.
+
+\bibitem{onsager1944crystal}
+\uppercase{Onsager L}.
+\newblock Crystal statistics. i. a two-dimensional model with an order-disorder
+  transition[J].
+\newblock Physical Review, 1944, 65:117--149.
+
+\bibitem{dyson1969existence}
+\uppercase{Dyson F~J}.
+\newblock Existence of a phase-transition in a one-dimensional ising
+  ferromagnet[J].
+\newblock Communications in Mathematical Physics, 1969, 12(2):91--107.
+
+\bibitem{kohn1999nobel}
+\uppercase{Kohn W}.
+\newblock Nobel lecture: Electronic structure of matter—wave functions and
+  density functionals*[J].
+\newblock Reviews of Modern Physics, 1999, 71(5):1253--1266.
+
+\bibitem{lee2013unconventional}
+\uppercase{Lee T~E}, \uppercase{Gopalakrishnan S}, \uppercase{Lukin M~D}.
+\newblock Unconventional magnetism via optical pumping of interacting spin
+  systems[J].
+\newblock Physical Review Letters, 2013, 110(25):257204.
+
+\bibitem{jin2016cluster}
+\uppercase{Jin J}, \uppercase{Biella A}, \uppercase{Viyuela O}, et~al.
+\newblock Cluster mean-field approach to the steady-state phase diagram of
+  dissipative spin systems[J].
+\newblock Physical Review X, 2016, 6(3):031011.
+
+\bibitem{piilo2009open}
+\uppercase{Piilo J}, \uppercase{Harkonen K}, \uppercase{Maniscalco S}, et~al.
+\newblock Open system dynamics with non-markovian quantum jumps[J].
+\newblock Physical Review A, 2009, 79(6):062112.
+
+\bibitem{plenio1998the}
+\uppercase{Plenio M~B}, \uppercase{Knight P~L}.
+\newblock The quantum-jump approach to dissipative dynamics in quantum
+  optics[J].
+\newblock Reviews of Modern Physics, 1998, 70(1):101--144.
+
+\bibitem{balents2010spin}
+\uppercase{Balents L}.
+\newblock Spin liquids in frustrated magnets[J].
+\newblock Nature, 2010, 464(7286):199--208.
+
+\bibitem{qian2013quantum}
+\uppercase{Qian J}, \uppercase{Zhou L}, \uppercase{Zhang W}.
+\newblock Quantum phases of strongly interacting rydberg atoms in triangular
+  lattices[J].
+\newblock Physical Review A, 2013, 87(6).
+
+\bibitem{biamonte2017tensor}
+\uppercase{Biamonte J}, \uppercase{Bergholm V}.
+\newblock Tensor networks in a nutshell[J].
+\newblock arXiv: Quantum Physics, 2017.
+
+\bibitem{finazzi2015corner-space}
+\uppercase{Finazzi S}, \uppercase{Boite A~L}, \uppercase{Storme F}, et~al.
+\newblock Corner-space renormalization method for driven-dissipative
+  two-dimensional correlated systems.[J].
+\newblock Physical Review Letters, 2015, 115(8):080604--080604.
+
+\bibitem{rota2017critical}
+\uppercase{Rota R}, \uppercase{Storme F}, \uppercase{Bartolo N}, et~al.
+\newblock Critical behavior of dissipative two-dimensional spin lattices[J].
+\newblock Physical Review B, 2017, 95(13).
+
+\bibitem{lindblad1979non-markovian}
+\uppercase{Lindblad G}.
+\newblock Non-markovian quantum stochastic processes and their entropy[J].
+\newblock Communications in Mathematical Physics, 1979, 65(3):281--294.
+
+\bibitem{lindblad1976on}
+\uppercase{Lindblad G}.
+\newblock On the generators of quantum dynamical semigroups[J].
+\newblock Communications in Mathematical Physics, 1976, 48(2):119--130.
+
+\bibitem{lee2011antiferromagnetic}
+\uppercase{Lee T~E}, \uppercase{Haffner H}, \uppercase{Cross M~C}.
+\newblock Antiferromagnetic phase transition in a nonequilibrium lattice of
+  rydberg atoms[J].
+\newblock Physical Review A, 2011, 84(3).
+
+\bibitem{amico2008entanglement}
+\uppercase{Amico L}, \uppercase{Fazio R}, \uppercase{Osterloh A}, et~al.
+\newblock Entanglement in many-body systems[J].
+\newblock Reviews of Modern Physics, 2008, 80(2):517--576.
+
+\bibitem{biella2018linked}
+\uppercase{Biella A}, \uppercase{Jin J}, \uppercase{Viyuela O}, et~al.
+\newblock Linked cluster expansions for open quantum systems on a lattice[J].
+\newblock Physical Review B, 2018, 97(3).
+
+\bibitem{huybrechts2019cluster}
+\uppercase{Huybrechts D}, \uppercase{Wouters M}.
+\newblock Cluster methods for the description of a driven-dissipative spin
+  model[J].
+\newblock Physical Review A, 2019, 99(4).
+
+\bibitem{chan2015limit-cycle}
+\uppercase{Chan C}, \uppercase{Lee T~E}, \uppercase{Gopalakrishnan S}.
+\newblock Limit-cycle phase in driven-dissipative spin systems[J].
+\newblock Physical Review A, 2015, 91(5).
+
+\bibitem{owen2018quantum}
+\uppercase{Owen E~T}, \uppercase{Jin J}, \uppercase{Rossini D}, et~al.
+\newblock Quantum correlations and limit cycles in the driven-dissipative
+  heisenberg lattice.[J].
+\newblock New Journal of Physics, 2018, 20(4):045004.
+
+\bibitem{hannukainen2018dissipation-driven}
+\uppercase{Hannukainen J}, \uppercase{Larson J}.
+\newblock Dissipation-driven quantum phase transitions and symmetry
+  breaking[J].
+\newblock Physical Review A, 2018, 98(4).
+
+\bibitem{sacha2018time}
+\uppercase{Sacha K}, \uppercase{Zakrzewski J}.
+\newblock Time crystals: a review[J].
+\newblock Reports on Progress in Physics, 2018, 81(1):016401.
+
+\bibitem{iemini2018boundary}
+\uppercase{Iemini F}, \uppercase{Russomanno A}, \uppercase{Keeling J}, et~al.
+\newblock Boundary time crystals[J].
+\newblock Physical Review Letters, 2018, 121(3):035301.
+
+\bibitem{minganti2018spectral}
+\uppercase{Minganti F}, \uppercase{Biella A}, \uppercase{Bartolo N}, et~al.
+\newblock Spectral theory of liouvillians for dissipative phase transitions[J].
+\newblock Physical Review A, 2018, 98(4).
+
+\bibitem{gu2010fidelity}
+\uppercase{Gu S}.
+\newblock Fidelity approach to quantum phase transitions[J].
+\newblock International Journal of Modern Physics B, 2010, 24(23):4371--4458.
+
+\bibitem{luo2018fidelity}
+\uppercase{Luo Q}, \uppercase{Zhao J}, \uppercase{Wang X}.
+\newblock Fidelity susceptibility of the anisotropic xy model: The exact
+  solution[J].
+\newblock Physical Review E, 2018, 98(2).
+
+\bibitem{zanardi2007bures}
+\uppercase{Zanardi P}, \uppercase{Venuti L~C}, \uppercase{Giorda P}.
+\newblock Bures metric over thermal state manifolds and quantum criticality[J].
+\newblock Physical Review A, 2007, 76(6):062318.
+
+\bibitem{rossini2018ground-state}
+\uppercase{Rossini D}, \uppercase{Vicari E}.
+\newblock Ground-state fidelity at first-order quantum transitions[J].
+\newblock Physical Review E, 2018, 98(6):062137.
+
+\bibitem{hartmann2019neural-network}
+\uppercase{Hartmann M~J}, \uppercase{Carleo G}.
+\newblock Neural-network approach to dissipative quantum many-body dynamics[J].
+\newblock Physical Review Letters, 2019, 122(25):250502.
+
+\bibitem{vicentini2019variational}
+\uppercase{Vicentini F}, \uppercase{Biella A}, \uppercase{Regnault N}, et~al.
+\newblock Variational neural-network ansatz for steady states in open quantum
+  systems[J].
+\newblock Physical Review Letters, 2019, 122(25):250503.
+
+\bibitem{yoshioka2019constructing}
+\uppercase{Yoshioka N}, \uppercase{Hamazaki R}.
+\newblock Constructing neural stationary states for open quantum many-body
+  systems[J].
+\newblock Physical Review B, 2019, 99(21):214306.
+
+\bibitem{nagy2019variational}
+\uppercase{Nagy A}, \uppercase{Savona V}.
+\newblock Variational quantum monte carlo method with a neural-network ansatz
+  for open quantum systems[J].
+\newblock Physical Review Letters, 2019, 122(25):250501.
+
+\bibitem{carleo2019machine}
+\uppercase{Carleo G}, \uppercase{Cirac I}, \uppercase{Tishby N}, et~al.
+\newblock Machine learning and the physical sciences[J].
+\newblock arXiv: Computational Physics, 2019.
+
+\bibitem{mehta2014an}
+\uppercase{Mehta P}, \uppercase{Schwab D~J}.
+\newblock An exact mapping between the variational renormalization group and
+  deep learning.[J].
+\newblock arXiv: Machine Learning, 2014.
+
+\bibitem{schollwock2005the}
+\uppercase{Schollwock U}.
+\newblock The density-matrix renormalization group[J].
+\newblock Reviews of Modern Physics, 2005, 77(1):259--315.
+
+\bibitem{chan2016matrix}
+\uppercase{Chan G~K}, \uppercase{Keselman A}, \uppercase{Nakatani N}, et~al.
+\newblock Matrix product operators, matrix product states, and ab initio
+  density matrix renormalization group algorithms[J].
+\newblock Journal of Chemical Physics, 2016, 145(1):014102.
+
+\bibitem{dreyer2018projected}
+\uppercase{Dreyer H}, \uppercase{Cirac J~I}, \uppercase{Schuch N}.
+\newblock Projected entangled pair states with continuous virtual
+  symmetries[J].
+\newblock Physical Review B, 2018, 98(11).
+
+\bibitem{nandkishore2015many-body}
+\uppercase{Nandkishore R}, \uppercase{Huse D~A}.
+\newblock Many-body localization and thermalization in quantum statistical
+  mechanics[J].
+\newblock Annual Review of Condensed Matter Physics, 2015, 6(1):15--38.
+
+\bibitem{marino2019a}
+\uppercase{Marino J}, \uppercase{Rey A~M}.
+\newblock A cavity-qed simulator of slow and fast scrambling[J].
+\newblock Physical Review A, 2019, 99(5).
+
+\bibitem{bandyopadhyay2018exploring}
+\uppercase{Bandyopadhyay S}, \uppercase{Laha S}, \uppercase{Bhattacharya U},
+  et~al.
+\newblock Exploring the possibilities of dynamical quantum phase transitions in
+  the presence of a markovian bath[J].
+\newblock Scientific Reports, 2018, 8(1):11921--11921.
+
+\bibitem{fan2017out-of-time-order}
+\uppercase{Fan R}, \uppercase{Zhang P}, \uppercase{Shen H}, et~al.
+\newblock Out-of-time-order correlation for many-body localization[J].
+\newblock Science Bulletin, 2017, 62(10):707--711.
+
+\bibitem{patra2019chaotic}
+\uppercase{Patra A}, \uppercase{Altshuler B~L}, \uppercase{Yuzbashyan E~A}.
+\newblock Chaotic synchronization between atomic clocks[J].
+\newblock Physical Review A, 2019, 100(2).
+
+\bibitem{zhang2018machine}
+\uppercase{Zhang P}, \uppercase{Shen H}, \uppercase{Zhai H}.
+\newblock Machine learning topological invariants with neural networks[J].
+\newblock Physical Review Letters, 2018, 120(6):066401.
+
+\end{thebibliography}

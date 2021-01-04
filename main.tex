@@ -1,0 +1,76 @@
+﻿% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% %
+% 大连理工大学博士开题/中期 XeLaTeX 模版 —— 主文件 main.tex
+% 本模板基于网络可获得版本 <大连理工大学硕士/博士论文 XeLaTeX 模版 —— 主文件 main.tex> 修改
+% 原论文版本修改者,修订者：
+% 修改者：Yuri (E-mail: yuri_1985@163.com)
+% 修订者：whufanwei(E-mail: dutfanwei@qq.com)
+%%%%%%%%%%%%
+% 现开题/中期版本修改者: Anyons (E-mail: lixingli@mail.dlut.edu.cn)
+% 版本号： 1.01
+% 最后修改时间: 2020.01.01
+% 编译环境1：Ubuntu 12.04 + TeXLive 2011 + Emacs
+% 编译环境2：Windows 7 + CTeX v2.9.2.164 + WinEdit
+% 字体库： <Adobe Song Std>  <Adobe Heiti Std> <Adobe Kaiti Std> <Adobe Fangsong Std> <STXingkai> <STZhongsong>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt, a4paper, openany, twoside]{book}
+% \usepackage[final]{pdfpages}
+% 字体配置文件
+\input{setup/fonts}
+% 宏包配置文件
+\input{setup/packages}
+% 格式文件
+\input{setup/formatThesisProposal} %开题格式
+% \input{setup/formatThesisInterimReport} %中期格式
+\begin{document}
+
+% 定义所有的图片文件在 figures 子目录下
+\graphicspath{{figures/}}
+% 前言
+\frontmatter
+\ctitle{大连理工大学博士开题、中期报告模板}
+\input{preface/cover} %封面
+\Declare %说明
+\pagenumbering{Roman}
+\newpage
+        
+% \makeabstract
+% 设置目录字体和行间距
+\defaultmenufont
+% 目录
+\setcounter{page}{1}
+\tableofcontents
+
+% \cleardoublepage
+% 插图目录
+% \listoffigures
+% 表格目录
+% \listoftables
+% \cleardoublepage
+
+\defaultfont
+\mainmatter
+% 正文章节
+\defaultfont
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\include{body/chap00}
+\include{body/chap01}
+\include{body/chap02}
+\include{body/chap03}
+\include{body/chap04}
+\include{body/chap05}
+\include{body/chap06}
+\include{body/chap07}
+
+% 参考文献
+\defaultfont
+\wuhao
+\bibliographystyle{zjugbno}
+\bibliography{body/reference}
+\addcontentsline{toc}{chapter}{参考文献}
+\includepdf{appendix/supervisor.pdf}
+\includepdf{appendix/committee.pdf}
+\end{document}

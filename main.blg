@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: body/chap00.aux
+A level-1 auxiliary file: body/chap01.aux
+A level-1 auxiliary file: body/chap02.aux
+A level-1 auxiliary file: body/chap03.aux
+A level-1 auxiliary file: body/chap04.aux
+A level-1 auxiliary file: body/chap05.aux
+A level-1 auxiliary file: body/chap06.aux
+A level-1 auxiliary file: body/chap07.aux
+The style file: zjugbno.bst
+Database file #1: body/reference.bib
+Repeated entry---line 527 of file body/reference.bib
+ : @article{chan2015limit-cycle
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1051 of file body/reference.bib
+ : @article{balents2010spin
+ :                         ,
+I'm skipping whatever remains of this entry
+Name 1 in "Breuer, H.-P., and F. Petruccione" has a comma at the end for entry Breuer
+while executing---line 849 of file zjugbno.bst
+You've used 61 entries,
+            1849 wiz_defined-function locations,
+            721 strings with 11791 characters,
+and the built_in function-call counts, 18015 in all, are:
+= -- 1553
+> -- 656
+< -- 0
++ -- 328
+- -- 164
+* -- 1893
+:= -- 2513
+add.period$ -- 183
+call.type$ -- 61
+change.case$ -- 60
+chr.to.int$ -- 0
+cite$ -- 61
+duplicate$ -- 727
+empty$ -- 1937
+format.name$ -- 164
+if$ -- 3865
+int.to.chr$ -- 0
+int.to.str$ -- 61
+missing$ -- 20
+newline$ -- 308
+num.names$ -- 61
+pop$ -- 142
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 474
+stack$ -- 0
+substring$ -- 1712
+swap$ -- 164
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 177
+width$ -- 63
+write$ -- 667
+(There were 3 error messages)

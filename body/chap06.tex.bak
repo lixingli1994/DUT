@@ -1,0 +1,94 @@
+﻿% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+\chapter{现有的研究基础及成果}
+\label{chap06}
+
+\section{二维三角形网格中耗散量子多体系统的稳态相变}
+
+目前针对我们关注的耗散自旋1/2网格系统的稳态性质，我们已经做了一部分相关的研究。我们具体关注的模型是在二维三角形网格中的耗散各向异性Heisenberg模型的稳态性质，具体模型为
+\begin{equation}
+\hat{H}=\sum_{\langle i, j\rangle}\left(J_{x} \hat{\sigma}_{i}^{x} \hat{\sigma}_{j}^{x}+J_{y} \hat{\sigma}_{i}^{y} \hat{\sigma}_{j}^{y}+J_{z} \hat{\sigma}_{i}^{z} \hat{\sigma}_{j}^{z}\right),
+\end{equation}
+粒子与粒子之间只考虑最近邻相互作用，其中$\sigma_{i}^{\alpha}(\alpha=x, y, z)$是泡利矩阵，$J_{\alpha}(\alpha=x, y, z)$则是自旋在各个方向的耦合强度。我们考虑每一个粒子都局域得与一个环境相互作用，在此基础上给出对应的主方程
+\begin{equation}
+\frac{d \hat{\rho}}{d t}=-i[\hat{H}, \hat{\rho}]+\sum_{i} \mathcal{L}_{i}[\hat{\rho}],
+\end{equation}
+其中第一项为幺正项，第二项为非相干耗散相。第二项具体形式如下
+\begin{equation}
+\sum_{i} \mathcal{L}_{i}[\hat{\rho}]=\gamma \sum_{i}\left[\hat{\sigma}_{i}^{-} \hat{\rho} \hat{\sigma}_{i}^{+}-\frac{1}{2}\left\{\hat{\sigma}_{i}^{+} \hat{\sigma}_{i}^{-}, \hat{\rho}\right\}\right].
+\end{equation}
+结合三角网格的具体几何构型，我们对模型做平均场近似后，得到平均场主方程
+\begin{equation}
+\frac{d \hat{\rho}_{i}}{d t}=-i\left[\hat{H}_{\mathrm{MF}}, \hat{\rho}_{i}\right]+\frac{\gamma}{2}\left[2 \hat{\sigma}^{-} \hat{\rho}_{i} \hat{\sigma}^{+}-\left\{\hat{\sigma}^{+} \hat{\sigma}^{-}, \hat{\rho}_{i}\right\}\right],
+\end{equation}
+平均场主方程中幺正项的哈密顿量是将粒子间的相互作用视作有效哈密顿量
+\begin{equation}
+\hat{H}_{\mathrm{MF}}=\sum_{i \neq j \neq k}^{\alpha=x, y, z} z J_{\alpha}\left(\hat{\sigma}^{\alpha}\left\langle\hat{\sigma}_{j}^{\alpha}\right\rangle+\hat{\sigma}^{\alpha}\left\langle\hat{\sigma}_{k}^{\alpha}\right\rangle\right).
+\end{equation}
+在此基础上，我们通过三个子格点稳态序参量取值之间的关系，得到平均场稳态相图。在平均场相图中，我们发现除了与正方形网格同样存在的顺磁相(PM)，铁磁相(FM)之外，的确出现了因几何阻挫效应诱导出的两反铁磁相(BAFM)，极限环(LC)以及在图.\ref{fig:meanfielddiagram}中黑色箭头所指的三反铁磁相(TAFM).
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]{MeanFieldPhasediagram.eps}
+    \bicaption[fig:meanfielddiagram]{平均场相图}{三角形网格平均场稳态相图}{Fig.}{The mean-field steady-state phase diagram of triangular-lattice XYZ model with $J_{z}/\gamma=1$.}
+\end{figure}
+
+其中需要说明的是，在平均场相图中，三反铁磁相和极限环其都是三个粒子的序参量不相等，$\left\langle\hat{\sigma}_{i}^{x}\right\rangle \neq\left\langle\hat{\sigma}_{j}^{x}\right\rangle \neq\left\langle\hat{\sigma}_{k}^{x}\right\rangle$，但是三反铁磁相的三个取值最终是稳定的，不随时间变化的；极限环则是与时间有关的，周期性震荡的。因此为了区别这两个稳态结果，我们选取具体参数对这两者进行研究。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]{TimeEvolution.pdf}
+    \bicaption[fig:time]{动力学过程}{在不同参数下，三个子格点的动力学过程。图(a)中最终达到三反铁磁相，图(b)中系统最终为极限环}{Fig.}{The dynamical process of the three sublattice under different parameters. In the left subfigure, the system shows the Triantiferromagnetic properties and in the right one, the system enters the limit cycle phase finally.}
+\end{figure}
+
+在图\ref{fig:time}中，我们分别选取两个参数点给出其动力学演化过程。可以看到，在这两组参数下，系统选取任意初态进行演化。最后在稳态情况下，虽然两个子图中三个子格点序参量的取值都不同，但是图\ref{fig:time}(a)为三反铁磁相，图\ref{fig:time}(b)则是极限环。因此我们可以确定，在二维三角形网格中的耗散各向异性Heisenberg模型基于平均场近似下的稳态结果，是的确存在由几何阻挫诱导的三反铁磁相的。
+
+我们在给出平均场稳态相图的基础上，对平均场结果施加微扰，进行稳定性分析。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.40]{StabilityAnalysis-Appendix-eps-converted-to.pdf}
+    \bicaption[fig:SSA]{微扰结果}{对系统在不同参数下施加微扰，最终达到不同稳态}{Fig.}{Performing the perturbation under different parameter conditions and the system will achieve totally different steady-state.}
+\end{figure}
+
+根据平均场近似下的主方程，我们可以得到关于泡利矩阵的非线性方程——Bloch方程。从Bloch方程中得到，三个粒子的自旋向下即$\langle\sigma^{z}_{\alpha}\rangle=-1$ 为此方程组的稳定解，并且此稳定解被定义为顺磁相。因此我们假设在初始时刻系统状态处在顺磁相，但是在不同耦合参数的调节下，顺磁相不再稳定，因此我们对三个粒子各自的主方程，施加不同的微扰，人为得打破三者之间的对称性。如果系统在此参数下是稳定的，则最终又会回到顺磁相；否则，系统将得到其他解。
+
+在图\ref{fig:SSA}中，我们选取了六组不同的参数，分别对应着双反铁磁相，铁磁相，顺磁相，极限环，三反铁磁相和双反铁磁相。可以看到对以顺磁相为初始条件的主方程施加微扰后，在不同参数下，系统最终会得到不同的稳态解，与平均场相图的参数分布吻合。
+
+因为平均场近似完全地切断了粒子之间的短程相互作用，因此我们进一步计算团簇平均场结果下的稳态结果，观察在考虑了粒子之间局域的短程相互作用之后，系统稳态是否会发生什么变化，尤其是几何阻挫效应是否依旧在稳态结果中存在以及如果几何阻挫效应依旧存在，那么发生几何阻挫效应的参数区域是否会发生变化。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.55]{PhaseTransitionCMF.eps}
+    \bicaption[fig:CMF]{团簇平均场}{三格点团簇在不同参数下的稳态性质}{Fig.}{The steady-state properties of the three-sublattice cluster under different parameters.}
+\end{figure}
+
+图\ref{fig:CMF}中给出了三格点团簇在固定$J_{y}/\gamma=-1.5,J_{z}/\gamma=1.0$两个方向耦合强度后，系统稳态随着$x$方向耦合强度变化的结果。可以看到，在图中分别有铁磁相，顺磁相以及两反铁磁相和三反铁磁相，说明至少在考虑部分局域相互作用后，系统依旧会受到其几何结构的影响，发生几何阻挫。
+
+接下来我们将对二维三角形网格耗散各向异性Heisenberg模型进行更深一步的研究，考虑更大尺寸的团簇，观察几何阻挫诱导出的两反铁磁相和三反铁磁相是否会随着团簇大小而发生变化，同时我们将利用量子Fisher信息所反映的多体纠缠结构，去研究在耗散量子多体系统发生相变时，稳态的多体纠缠结构是否也会发生变化，是否具有临界现象，满足一定的标度律等。
+
+\section{开放系统稳态保真率}
+
+在描述量子多体系统的语言中，密度矩阵永远是最重要的一个量。因为密度矩阵包含着多体系统的所有信息，可以反映出多体系统的全部性质，因此，当系统发生相变时，理应在密度矩阵的变化中有所反应。
+
+不幸的是，对于相变这一概念，我们往往需要在热力学极限下才可以真正得去讨论。因此在我们计算机有限的数值模拟能力下，密度矩阵在相变前后的变化可能就很不明显，甚至微乎其微。但是从另一个角度考虑，是否能对刻画密度矩阵相似程度的保真度进行微扰展开，得到其比较敏感，能够反映微小变化的高阶量。事实上，在封闭量子多体系统中，已经有人通过保真度的二阶导数研究相变问题，因此基于以上思路，我们可以对混态密度矩阵保真度进行微扰展开，得到混态密度矩阵保真度的二阶导数以此来研究开放系统中的稳态相变问题。
+
+基于微扰展开的思路，我们给出混态保真度的二阶导数，即保真率：
+\begin{equation}
+\chi_{F}=-\sum_{\nu \mu} \frac{1}{4} \frac{\left|\delta \rho_{\nu \mu}\right|^{2}}{\rho_{\nu}+\rho_{\mu}}
+\end{equation}
+
+目前我们对此物理量进行了初步的计算，得到了在团簇平均场方法下四粒子正方形团簇稳态相变的结果，用以进行展示。
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]{FsMF.png}
+    \bicaption[fig:FsMF]{保真率}{在相变临界点保真率的变化。}{Fig.}{The critical property of the fidelity susceptibility near the critical point of the phase transition.}
+\end{figure}
+
+蓝线为混态保真率的变化，红线为定义的序参量——泡利矩阵$x$方向的平均值。可以看到，在相变临界点处，即红线发生突变的地方，保真率从$10^{-20}$的量级突变致$10^{8}$的量级，相对较好的表现出稳态密度矩阵在这个参数范围内的变化。因此可以认为，混态密度矩阵保真率可以作为一个很有希望的量用以确定相变临界点。
+
+在图\ref{fig:FsMF}中我们使用了团簇平均场，仅仅是为了展示混态保真率在相变临界点可能展示出的一些特性。在随后的研究中，我们将不使用任何平均场结果，仅仅通过不断增加考察系统的粒子数来扩大系统维度，得到相应的结果，考察保真率在耗散多体量子系统相变研究中的有效性。
+
+
+
+

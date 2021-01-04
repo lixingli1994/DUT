@@ -1,0 +1,133 @@
+﻿% !TEX TS-program = XeLaTeX
+% !TEX encoding = UTF-8 Unicode
+
+\chapter{学位论文研究背景、目的和意义}
+\label{chap01}
+
+随着经典物理理论框架的完善，在十九世纪末，物理学家们乐观得认为今后物理研究的侧重点将放在对物理学常数更精确的测量以及解决在现有理论框架的一些衍生问题。但是他们同时也承认，物理学上空还有“两朵乌云”——以太问题和黑体辐射问题依旧悬而未决。然而就是在对这两个问题的探索过程中，分别诱导出近现代物理的两大理论支柱——相对论和量子力学。与相对论关注更快速度，更大尺度的物理现象相比，量子力学侧重于描绘微观尺度的物理规律。从量子力学的重要诠释之一，哥本哈根诠释出发，微观系统的状态是由波函数来描述，其动力学过程，则是由五大基本假设之一的Schr\"odinger方程决定。虽然一开始，量子力学表现出的独特的量子性质和不确定性令很多物理学家无法接受，甚至为此引发了物理学界的大争论，但是随着理论的不断完善与发展，并且由其衍生出的量子多体理论以及量子场论等一系列理论和实验、应用等方面取得了一系列成功，从而奠定了量子力学的近代物理学界的重要地位。
+
+\section{开放量子系统}
+对于封闭的量子系统，可以利用Schr\"odinger方程对系统的动力学演化进行刻画，可以单纯得使用一个或一系列时间演化幺正算符得到任意时刻粒子所处的状态，这样的不与外界发生相互作用的量子系统被统称为封闭系统。然而真实的物理系统中并不存在完全孤立的量子系统，量子系统总是不可避免得与外界环境发生相互作用。因此，我们需要考虑系统与环境发生相互作用的一类情况，对于这类系统，我们称为开放量子系统\cite{Breuer}\cite{breuer2009measure}。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.7]{dynamicalmap.pdf}
+    \bicaption[fig:dynamicalmap]{动力学映射}{动力学映射$V(t)$示意图,图片出自文献\cite{Breuer}。}{Fig.}{A schematic diagram showing the action of a dynamical map $V(t)$.This figure is taken from Ref.\cite{Breuer}.}
+\end{figure}
+
+对于开放量子系统，粒子的状态则使用密度矩阵$\rho$的概念进行描述，动力学算符通过与密度矩阵乘积后取迹的操作，可以得到动力学算符的平均值。对于粒子演化过程，同样需要一套动力学方程用以刻画，因此我们使用量子主方程描绘开放量子系统动力学演化过程。
+
+倘若将系统和与之耦合的环境视为一个更大的整体的封闭量子系统，那么对于这个封闭系统的动力学过程，我们可以使用Schr\"odinger方程对其进行刻画。将开放量子系统的整体哈密顿量写成系统自由哈密顿量、环境自由哈密顿量以及系统与环境相互作用哈密顿量的三项加和
+\begin{equation}
+H = H_{S} + H_{B} + H_{I},
+\end{equation}
+在相互作用绘景下，对von Neumann方程进行形式积分后带回到原方程。在将系统与环境的耦合强度考虑为弱耦合条件下，取玻恩近似(Born approximation)，
+\begin{equation}
+\rho(t) \approx \rho_{S}(t) \otimes \rho_{B}
+\end{equation}
+任意时刻整体密度矩阵都可以写成含时系统密度矩阵与不含时环境密度矩阵的直积形式。因此可以对整体密度矩阵取部分迹，得到关于系统密度矩阵$\rho_{S}$的积分微分方程，
+\begin{equation}
+\frac{d}{d t} \rho_{S}(t)=-\int_{0}^{t} d s t r_{B}\left[H_{I}(t),\left[H_{I}(s), \rho(s)\right]\right].
+\label{beforeRedfieldME}
+\end{equation}
+
+在考虑量子系统和环境相互作用过程是否是Markov过程后，我们可以将主方程分为Markovian主方程与non-Markovian主方程。在对我们主要关注的Markovian主方程进行进一步的讨论之前，我们先简单介绍下Markovian主方程与non-Markovian主方程。
+
+具体地说，在non-Markovian主方程中，系统和环境的相互作用存在记忆效应\cite{de vega2017dynamics}，即通过系统环境耦合，从系统流向环境的信息，在某一段时刻会回流至系统。与non-Markovian主方程相对的，信息只能单一得从系统流向环境后不再回流，不存在记忆效应的即是Markovian主方程\cite{breuer2009measure}。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.5]{Openquantumsystem.pdf}
+    \bicaption[fig:openquantum]{开放系统}{开放量子系统中将关注的系统与环境视为一个整体的封闭系统,图片出自文献\cite{Breuer}。}{Fig.}{In open quantum systems，the system we concerned and the environment are considered as a entire closed system.This figure is taken from Ref.\cite{Breuer}.}
+\end{figure}
+
+但在我们的具体研究中，主要考虑的是Markovian主方程。因此求解得到Eq.(\ref{beforeRedfieldME})并对该方程取马尔科夫近似(Markov approximation)后，方程即成为一个时间局域的主方程，即Redfield方程。
+\begin{equation}
+\frac{d}{d t} \rho_{S}(t)=-\int_{0}^{t} d s \operatorname{tr}_{B}\left[H_{I}(t),\left[H_{I}(s), \rho_{S}(t) \otimes \rho_{B}\right]\right].
+\label{RefildME}
+\end{equation}
+需要注意的是，虽然在此时利用了Markov近似，但是Redfield主方程依旧不是一个Markovian主方程。在随后考虑环境关联时间尺度和系统演化时间尺度的关系，对整体演化过程进行粗粒化处理，进行久期近似(Secular approximation)之后，可以得到满足保迹，正定以及动力学半群要求的主方程。
+\begin{equation}
+\frac{d}{d t} \rho_{S}(t)=-\int_{0}^{\infty} d s t r_{B}\left[H_{I}(t),\left[H_{I}(t-s), \rho_{S}(t) \otimes \rho_{B}\right]\right].
+\label{ME}
+\end{equation}
+倘若我们在此基础上进行更进一步的细化，将相互作用哈密顿量写成系统算符 $\sum_{\alpha} A_{\alpha}$ 和环境算符$\sum_{\alpha} B_{\alpha}$ 的直积形式，
+\begin{equation}
+H_{I}=\sum_{\alpha} A_{\alpha} \otimes B_{\alpha},
+\end{equation}
+然后在相互作用绘景中，带入到Eq.(\ref{ME})后可以得到Lindblad形式的主方程，
+\begin{equation}
+\frac{d}{d t} \rho_{S}(t)=-i\left[H_{L S}, \rho_{S}(t)\right]+\mathcal{D}\left(\rho_{S}(t)\right)
+\end{equation}
+其中有
+\begin{equation}
+H_{L S}=\sum_{\omega} \sum_{\alpha, \beta} S_{\alpha \beta}(\omega) A_{\alpha}^{\dagger}(\omega) A_{\beta}(\omega)
+\end{equation}
+和
+\begin{equation}
+\mathcal{D}\left(\rho_{S}\right)=\sum_{\omega} \sum_{\alpha, \beta} \gamma_{\alpha \beta}(\omega)\left(A_{\beta}(\omega) \rho_{S} A_{\alpha}^{\dagger}(\omega)-\frac{1}{2}\left\{A_{\alpha}^{\dagger}(\omega) A_{\beta}(\omega), \rho_{S}\right\}\right)
+\end{equation}
+这里的$ S_{\alpha \beta}(\omega)$ 和 $\gamma_{\alpha \beta}(\omega)$ 均与腔关联函数有关，
+\begin{equation}
+\begin{aligned}
+\gamma_{\alpha \beta}(\omega)&=\Gamma_{\alpha \beta}(\omega)+\Gamma_{\beta \alpha}^{*}(\omega)=\int_{-\infty}^{+\infty} d s e^{i \omega s}\left\langle B_{\alpha}^{\dagger}(s) B_{\beta}(0)\right\rangle\\
+S_{\alpha \beta}(\omega)&=\frac{1}{2 i}\left(\Gamma_{\alpha \beta}(\omega)-\Gamma_{\beta \alpha}^{*}(\omega)\right)
+\end{aligned}
+\end{equation}
+
+在处理具体问题时，我们可以根据如上过程给出对应的主方程，求解量子系统的动力学演化\cite{leggett1987dynamics}。但是对于开放量子系统，我们除了关注系统的动力学演化过程外，更关注系统在与各种外部环境(热库，玻色库等)相互作用之后，最终达到的稳定状态。对于一个与外界有相互作用的系统而言，当其与环境达到平衡后所体现出的性质，往往是我们更为关注的。
+
+
+\section{量子相变}
+开放量子系统理论自建立以来取得了很大的成功，无论是在理论还是实验上都取得了诸多成果。随着开放量子系统理论的不断成熟和完善，研究者们将更多的目光投入到开放量子多体系统相关性质的研究，尤其是开放量子多体系统的稳态性质吸引了大量的关注，也得到了很多有意义的研究结果。具体地讲，近些年来对于开放量子多体系统稳态性质的研究主要集中在量子时间晶体，量子同步，量子相变以及其他非平衡量子现象。其中，耗散量子相变现象已经在一系列实验平台上得到了实现，诸如超导电路\cite{houck2012on-chip}、超冷原子气体\cite{bloch2008many-body}，捕获离子阱\cite{muller2012engineered}以及腔QED系统
+\cite{tomadin2010many-body}。
+
+从经典相变理论出发，我们将得到量子相变的理论框架。在经典物理框架下的多体系统，我们往往用“相”的概念来描述多体系统的整体性质，而系统的整体性质从一种相到另一种相转变的过程即为相变，发生相变的点则被称为临界点。相变往往意味着系统状态发生天翻地覆的变化，因此，在临界点附近，描述系统的一些物理量往往会表现出发散的性质。在经典相变理论中，朗道的对称性破缺理论给出了相变过程的实质物理内涵，随着系统从无序到有序的转变，原本系统具有较为平庸的，无序的性质发生变化，系统的对称性发生改变，得到了非平庸，有序的状态。在经典相变理论中，系统的温度往往是决定系统状态的一个非常重要的物理量。随着温度的变化，水分子的排列从无长程序的液态到呈现晶体排列的固态，系统的对称性发生了显著的变化。与经典相变理论类似，但又有所不同的是量子相变理论\cite{vojta2003quantum}。
+
+在量子相变理论中，温度不再是考察量子系统的一个物理量，因为往往我们在讨论量子相变的时候，系统的温度被设定为极低甚至是绝对零度。在这种情况下，从经典物理的角度出发认为此时不应该出现相变，但是量子相变的过程不再受到因温度驱动的热涨落的影响，而是完全地被量子力学所决定，其核心是由海森堡测不准关系给出的量子涨落理论。即使在绝对零度，粒子依旧具有“零点能”，这是因为海森堡测不准关系指出，对于微观量子系统，我们无法同时确定微观粒子的动量和坐标，粒子发生量子涨落与经典相变中粒子发生热涨落类似。因为量子涨落的存在，我们依旧可以在绝对零度的情况下得到相变结果。同样的，和经典相变中临界现象类似，量子临界点附近也会出现很多性质是普适的，满足标度假设。
+
+量子系统的相变往往是随着粒子与粒子之间的耦合方式或者耦合强度发生变化时发生，例如封闭量子系统中著名的伊辛模型，1920年物理学家 Wilhelm Lenz 将伊辛模型交给其学生Ernst Ising，让其基于此模型进行关于相变理论的研究。随后Ising证明在一维情况下，Ising模型没有居里温度，不会出现自发磁化现象，亦即不会发生相变。直到20年后的1943年，二维Ising模型的解析解才由Lars Onsager给出，随着耦合强度的不同，二维Ising模型会呈现出所有粒子自旋指向同一方向的铁磁性和出现交错反向指向的反铁磁性。一般来讲，二维Ising模型可以通过传递矩阵方法(transfer-matrix method)求得，但是对于更高维的Ising模型，目前依旧没有找到解析解\cite{dyson1969existence}。
+
+\section{开放量子多体系统稳态相变}
+与封闭量子多体系统考虑系统基态不同，开放量子多体系统则关注系统与环境相互作用后的稳定状态，即多体量子系统的稳态。对于稳态的定义，分别有：一是描述系统的密度矩阵最终演化为一个与时间无关的，不随时间变化的状态。二是系统的密度矩阵最终呈现出随着时间变化的周期性演化。
+
+对于开放量子多体网格系统稳态性质的研究，往往受限于希尔伯特空间的指数增长困难。以自旋1/2粒子为例，每一个粒子的希尔伯特空间即为2。对于N体量子系统而言，希尔伯特空间即为$2^N$，呈现出指数增长的趋势。如果对200个自旋1/2粒子的量子系统进行全希尔伯特空间的计算机模拟，采用单精度浮点型变量存储每一个矩阵元，则需要共计$2^{200}\times4$字节进行计算，换算为5.8460e+48TB的计算机内存，这显然对于任何一台计算机都无法实现。希尔伯特空间随粒子数增加而产生指数发散现象，这就是量子多体系统中希尔伯特空间的“指数墙”问题。“指数墙”这一概念由1998年诺贝尔化学奖获得者Walter Kohn在其1999年发表在Reviews of Modern Physics上的诺贝奖讲座文章\cite{kohn1999nobel}中提出。
+
+对于量子多体系统来讲，200个粒子和经典相变中需要的粒子数相比显然还是远远不够的，因此如何从理论上解决希尔伯特空间发散问题则一直是量子多体系统研究中的重点与难点。在目前对量子多体系统的研究中，主要采取以下几种方法：平均场近似、蒙特卡洛模拟、张量网络算法等。
+
+在近几年的研究中，研究者们分别得到了包括二维耗散Ising模型、二维耗散Heisenberg模型以及耗散Bose-Hubbard模型等系统的稳态相图。在文献\cite{lee2013unconventional}中，研究者利用平均场方法(Mean-field method)对只考虑最近邻相互作用的二维正方形网格各向异性Heisenberg模型进行处理，得到了基于平均场近似处理下的系统哈密顿量以及对应的Markovian主方程。此时的主方程具有$\mathbb{Z}_{2}$对称性并且当系统处在有序相时，$\mathbb{Z}_{2}$对称性会发生自发性破缺。根据平均场主方程，可以得到与之对应的Bloch方程，分析得到自旋向下是此系统的稳定固定解，定义此时系统处在顺磁相(paramagnetic phase)，因此可以在动量空间下对系统进行线性稳定性分析。考虑系统初始处在顺磁相且在一定参数下不稳定，因此随后改变系统哈密顿量的耦合常数，可以分为铁磁相(ferromagnetic phase）即系统稳态在$x$方向发生有限磁化，$\mathbb{Z}_{2}$对称性发生自发破缺；反铁磁相(antiferromagnetic phase)即系统稳态在$x$方向发生有限磁化的基础上，在空间分布表现为两个子格点交错排列；在自旋密度波相(spin-density-wave phase)中动量空间的不稳定点分布在动量$k$取值不等于0和$\pi$；交错XY相(staggered-XY phase)则只在$z$方向耦合为0时存在，此时在动量空间中最不稳定的点得动量取值为0或者$\pi$。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.40]{XYZmeanPD.png}
+    \bicaption[fig:phasediag]{相图}{耗散各向异性Heisenberg模型的稳态相图，子图(a)中$J_{z}\neq0$,子图(b)中$J_{z}=0$。图片出自文献\cite{lee2013unconventional}。}{Fig.}{The steady-state phase diagram of dissipative anisotropic Heisenberg model, in the left panel $J_{z}\neq0$ and $J_{z}=0$ in right one. This figure is taken from Ref.\cite{lee2013unconventional}.}
+\end{figure}
+
+平均场近似将系统简化成为单粒子模型，无限网格中粒子与粒子之间的相互作用被一个与单粒子状态有关的有效哈密顿量代替，从而得到一个被当前单粒子密度矩阵约束的动力学主方程。选取任意初态带入该主方程，长时演化总是可以得到一个自洽的稳定解。可以看到，平均场近似在计算上有效地大幅度减少了系统的自由度，并且能够对一部分问题进行较为准确的分析，但是平均场近似具有其天然的劣势，即切断粒子间的局域相互作用。
+
+在真实的量子系统中，局域相互作用往往在粒子与粒子间相互作用中占有主导地位。因此利用平均场近似，切断粒子间的局域相互作用与完整的物理模型大相径庭，有可能带来不够准确的结果。因此在随后的研究中\cite{jin2016cluster}，研究者们使用团簇平均场方法对相同的二维正方形网格各向异性Heisenberg模型进行了研究。
+在团簇平均场方法中，首先根据系统空间结构的平移对称性，将系统划分为一个个结构相同的团簇，在此基础上整个量子系统就可以被分解为所有团簇的直积形式，因此在理论上，可以通过研究不同尺寸的团簇对整体多体量子系统进行刻画。具体在文献\cite{jin2016cluster}中,研究者们重点利用团簇平均场理论(Cluster mean-field theory)结合量子轨迹方法\cite{piilo2009open}\cite{plenio1998the}(Quantum trajectories)具体研究了文献
+\cite{lee2013unconventional}中给出的平均场稳态相图中的顺磁-铁磁相变过程。通过不断增大团簇的尺寸，将更多的局域相互作用考虑进去，发现原本在平均场相图中占有很大部分的铁磁相会逐渐缩减，在团簇平均场的稳态相图中形成类似“孤岛”的结果，从根本上对原有相图进行了修正。
+
+\section{几何阻挫}
+在封闭量子多体系统中，对于二维正方形网格自旋1/2模型，当系统具有反铁磁相互作用时，相邻格点间的粒子可以自洽得自旋反向排布。但是当我们考虑三角形网格并设定其中两个粒子自旋已经满足反铁磁相互作用后，第三个粒子的自旋朝向无论朝上亦或是朝下都不能与其他两个自旋同时满足反铁磁相互作用。但无论自旋朝向是向上还是向下，都满足最低能态的需求，因此出现了基态兼并的情况。同时因为量子涨落的原因，系统的基态呈现某种“歇斯底里”的状态无法形成长程序，因此将有这种与水类似的状态的量子系统被称为量子液体，同时这种因为网格自身几何结构带来的量子效应被称为几何阻挫(geometrical frustration) 或是自旋阻挫\cite{balents2010spin}(spin frustration)。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[scale=0.30]{SpinF.png}
+    \bicaption[fig:spins]{几何阻挫}{在三角形网格中，自旋系统出现几何阻挫。}{Fig.}{In the triangular lattice, the geometrical frustration emerged in the spin system.}
+\end{figure}
+
+对于开放量子系统，如果我们考虑粒子的空间排布是三角形网格结构，稳态结果是否也存在几何阻挫现象。在文献\cite{qian2013quantum}中，研究者利用具有强相互作用的里德堡原子在开放三角形网格对量子阻挫进行了研究。同样利用平均场近似对量子主方程进行处理，主方程即可约化成为非线性耦合方程，将三角形网格分成三个不同的子格点，得到了两种不同的不均匀相，并且定义：
+
+两反铁磁相(Biantiferromagnetic)，即三个子格点中的两个具有相同的布居数，第三个子格点与这两个子格点不同。如果以泡利矩阵$x$方向的平均值为序参量，即有$\langle\sigma^{x}_{i}\rangle=\langle\sigma^{x}_{j}\rangle\neq\langle\sigma^{x}_{j}\rangle$。同时根据第三个子格点与其他两个子格点布居数的关系，分成第一类两反铁磁相$\langle\sigma^{x}_{i}\rangle=\langle\sigma^{x}_{j}\rangle>\langle\sigma^{x}_{j}\rangle$和第二类两反铁磁相$\langle\sigma^{x}_{i}\rangle=\langle\sigma^{x}_{j}\rangle<\langle\sigma^{x}_{j}\rangle$。
+
+三反铁磁相(Triantiferromagnetic)，即三个子格点中的每一个子格点布居数都与其他两个不相同，即$\langle\sigma^{x}_{i}\rangle\neq\langle\sigma^{x}_{j}\rangle\neq\langle\sigma^{x}_{j}\rangle$。
+
+文献\cite{qian2013quantum}中的确得到几何阻挫效应并且丰富了里德堡原子的稳态相图。在弱相互作用下，系统存在铁磁相，三反铁磁相以及两种两反铁磁相。通过控制失协量$\Delta$,发现存在从铁磁相到两反铁磁相的相变，同时因为里德堡原子相互作用的非线性效应，在各个相中存在双稳现象。
+
+\section{研究目的与意义}
+
+目前对于耗散自旋1/2网格系统各种性质的研究依旧是不足的，受限于耗散量子多体系统希尔伯特空间维度，理论分析和数值模拟等方面都存在局限性。同时针对开放量子多体系统相变问题，目前我们还知之甚少，更多的是基于平均场以及团簇平均场结合量子轨迹的方法进行研究，这在对整体物理模型进行描述的方面上是有局限和欠缺的。但是目前适用于开放系统的张量网络算法\cite{biamonte2017tensor}相对较少，因此对多粒子数的模拟仍然具有很大的调整。据我们所知，角空间重整化方案\cite{finazzi2015corner-space}\cite{rota2017critical}是目前几个有希望的开放系统重整化方案，因此在随后的过程中也计划整合该重整化方案到我们的研究。同时，开放量子多体系统稳态密度矩阵保存着系统的所有信息，对比两个不同的密度矩阵，我们使用保真度的概念来进行度量，因此可以从保真度的相关性质确定临界点并研究量子相变。但是因为量子相变在不使用平均场近似等手段后，往往需要在热力学极限下才可以观察到。对于有限的,计算机可计算的维度下的密度矩阵，在参数跑动跨越临界点的时候，保真度的变化并不会那么明显。基于保真度的偶函数性质，我们可以给出保真度的二阶导数，即保真率用以放大在临界点处的变化行为，观察在临界点附近，保真率是否存在标度行为，是否随着系统尺寸的增大而指数增大。同时，对于我们已经熟知的相变过程，例如耗散二维正方形网格各向异性海森堡模型顺磁- 铁磁相变，在不同的数值模拟计算手段下，临界点略有偏差，而标度相变发生的物理量，多以预定义的序参量和关联函数为准，这些结果都会因数值模拟方法而带来误差。因此利用保真率的变化，可以在抛弃各类数学模拟近似后对系统稳态性质突变进行研究，排除了因为数值模拟方法而带来的误差，可以更直接地研究开放量子多体系统稳态相变问题。
+
+基于已有的研究结果，我们的主要研究目标放在了耗散自旋1/2网格的稳态性质上，尤其是对二维三角形无限网格中的耗散各向异性海森堡模型感兴趣。在之前提到的文献中，研究者们已经对正方形网格的耗散自旋1/2模型进行了一定的研究，但是对于因几何结构引起的几何阻挫效应的研究还是有所欠缺的。而且，从具体实验实现的角度来讲，量子系统往往受到操控精度或者退相干等实际情况的干扰无法完美模拟理论模型，虽然近些年来有部分实验实现了封闭量子系统的几何阻挫，但是如何抑制退相干依旧是一个比较困难的课题。因此，研究开放量子系统中的几何阻挫效应则在理论和实验上很有意义。
